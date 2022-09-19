@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom, var( --welcome-bg-start) 0%, var(--welcome-bg-end) 100%);
-    margin-bottom: 83px;
+    margin-bottom: var(--welcome-nav-height);//与actions的height使用同一个变量，可防止上拉后，导航栏和页面间出现白边
     > header{
         flex-shrink: 0;
         display: flex;
