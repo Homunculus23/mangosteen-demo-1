@@ -1,4 +1,9 @@
 :root {
-    --welcome-card-bg: white;
-    --welcome-text: white;
+    --welcome-card-bg: white;//黑暗模式背景颜色
+    --welcome-text: white;//黑暗模式文字颜色
+    --welcome-bg-start:#5d33be;
+    --welcome-bg-end:#8f4cd7;
+    --welcome-nav-height:64px;//导航栏高度
+    --welcome-nav-gap: 8px;//导航栏上下空隙
+    --z-index-bottom-nav: 10;//底部‘下一页’方框高度
 }

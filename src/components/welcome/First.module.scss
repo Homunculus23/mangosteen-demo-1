@@ -2,6 +2,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding-bottom: 8px;
     > div{
         display: flex;
     }
@@ -20,12 +21,21 @@
         }
     }
     > .actions{
+        position: fixed;//绝对定位必须加三行css：left: 0;bottom: 0;width: 100%;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        background: var(--welcome-bg-end);
         justify-content: space-between;//主轴平均分布
         align-items: center;//次轴居中
-        margin: 16px 16px 0;
+        // margin: 16px 16px 0; //使用fixed后，margin失效，将其总和到padding属性里
+        // padding: 24px 0;
+        padding: 0 16px;
         font-size: 32px;
-        padding: 24px 0;
+        height: var(--welcome-nav-height);
         color: var(--welcome-text);//颜色变量是准备黑暗模式
+        padding-bottom: var(--welcome-nav-gap);
         > .fake{visibility: hidden;}//隐藏占位
     }
 }
