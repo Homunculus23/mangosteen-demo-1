@@ -12,7 +12,9 @@ export const routes: RouteRecordRaw[] = [//jsx后缀时，RouteRecordRaw[]报错
         component: Welcome, 
         children: [
             {path:'', redirect:'/welcome/1',},//welcome默认为空，直接跳转到1。
-            {path:'1', component: First,},
+            {path:'1', component: First },
+            //{path:'1', component: {main:First,footer:FirstAction},},
+            //vue-router的功能，让一个路径对应两个部分，main为页面footer为动画，分别对应 Welcome.jsx 里 RouterView 的两个 name。
             {path:'2', component: Second,},
             {path:'3', component: Third,},
             {path:'4', component: Forth,},
