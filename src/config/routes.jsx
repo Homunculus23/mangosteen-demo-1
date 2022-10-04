@@ -5,7 +5,7 @@ import { Third } from "../components/welcome/Third";
 import { Forth } from "../components/welcome/Forth";
 import { Welcome } from "../views/Welcome";
 
-export const routes: RouteRecordRaw[] = [//jsx后缀时，RouteRecordRaw[]报错，因此改为tsx。若页面不能正常运行，删去该句并改后缀为jsx
+export const routes = [//jsx后缀时，RouteRecordRaw[]报错，因此改为tsx。若页面不能正常运行，删去该句并改后缀为jsx
     { path:'/', redirect: '/welcome', },//默认指向welcome
     { 
         path:'/welcome', 
